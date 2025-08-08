@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'CoconRegular';
+    src: url('fonts/CoconRegular.eot');
+    src: url('fonts/CoconRegular.eot') format('embedded-opentype'),
+         url('fonts/CoconRegular.woff2') format('woff2'),
+         url('fonts/CoconRegular.woff') format('woff'),
+         url('fonts/CoconRegular.ttf') format('truetype'),
+         url('fonts/CoconRegular.svg#CoconRegular') format('svg');
+}

@@ -1,0 +1,71 @@
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper { position: relative; margin: 0 auto 0px; padding: 0; *zoom: 1;
+}
+.bx-wrapper img { width: 100%; display: block; }
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {   /*fix other elements on the page moving (on Chrome)*/ -webkit-transform: translatez(0); -moz-transform: translatez(0); -ms-transform: translatez(0); -o-transform: translatez(0); transform: translatez(0); }
+.bx-wrapper .bx-viewport ul li { background: none; padding: 0; margin-bottom: 0 }
+/* LOADER */
+
+.bx-wrapper .bx-loading { min-height: 50px; height: 100%; width: 100%; position: absolute; top: 0; left: 0; z-index: 2000; }
+/* PAGER */
+
+
+
+
+.bx-wrapper .bx-pager { position: absolute; bottom: 49px; width: 100%; left: 0; display: block; }
+.bx-controls.bx-has-pager { bottom: 46%; position: absolute; right: 143px; }
+.bx-wrapper .bx-pager { padding-top: 0; z-index: 0; bottom: 50%; position: absolute; }
+.bx-wrapper .bx-pager { text-align: center; font-size: .85em; font-family: Arial; font-weight: bold; color: #666; padding-top: 0; margin-left: 0; text-indent: -99999 }
+.bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item { display: block; *zoom: 1;
+*display: inline;
+}
+.bx-wrapper .bx-pager.bx-default-pager a { display: block; margin: 10px 0; outline: 0; color: #fff; font-size: 14px; font-family: 'Century Gothic Bold'; line-height: 30px; width: 30px; height: 30px; border-radius: 50%; }
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active { background: #9ed100; width: 30px; height: 30px; border-radius: 50%; }
+/*DIRECTION CONTROLS (NEXT / PREV) */ 
+
+.bx-wrapper .bx-prev { background: rgba(0, 0, 0, 0) url("../images/banner_prev_arrow.png") no-repeat scroll 0 0; left: 20px; }
+.bx-wrapper .bx-next { background: rgba(0, 0, 0, 0) url("../images/banner_next_arrow.png") no-repeat scroll 0 0; right: 20px; }
+.bx-wrapper .bx-controls-direction a { position: absolute; top: 50%; margin-top: 0; outline: 0; width: 33px; height: 51px; text-indent: -9999px; z-index: 3; }
+.bx-wrapper .bx-controls-direction a.disabled { display: none; }
+.about_us .bx-wrapper .bx-prev { background: none; left: 0; transform: none }
+.about_us .bx-wrapper .bx-next { background: none; left: 0; transform: none }
+.about_us .bx-wrapper .bx-prev:hover { background: none; }
+.about_us .bx-wrapper .bx-next:hover { background: none; }
+/* AUTO CONTROLS (START / STOP) 
+
+.bx-wrapper .bx-controls-auto { text-align: center; }
+.bx-wrapper .bx-controls-auto .bx-start { display: block; text-indent: -9999px; width: 10px; height: 11px; outline: 0; /*background: url(images/controls.png) -86px -11px no-repeat;  margin: 0 3px;}*/
+.bx-controls-auto { display: none; }
+.bx-wrapper .bx-controls-auto .bx-start:hover, .bx-wrapper .bx-controls-auto .bx-start.active { background-position: -86px 0; }
+.bx-wrapper .bx-controls-auto .bx-stop { display: block; text-indent: -9999px; width: 9px; height: 11px; outline: 0;/* background: url(images/controls.png) -86px -44px no-repeat;*/ margin: 0 3px; }
+.bx-wrapper .bx-controls-auto .bx-stop:hover, .bx-wrapper .bx-controls-auto .bx-stop.active { background-position: -86px -33px; }
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager { text-align: center; width: 100%; }
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto { right: 0; width: 35px; }
+/* IMAGE CAPTIONS */
+.text-cnt { max-width: 970px; width: 100%; margin:0 auto;}
+.bx-wrapper .bx-caption { margin: 0 auto; position: absolute; text-align: center; top: 50%; width: 100%; transform:translateY(-50%);}
+.bx-wrapper .bx-caption h2 { color: #fff; font-family:'Roboto Bold'; display: block; font-size: 50px; line-height: 70px; margin-bottom: 24px; }
+.bx-wrapper .bx-caption p { color: #fff; display: block; font-size: 20px; line-height: 30px; padding-bottom: 36px; font-weight: 300; margin: 0; font-family:'Roboto-Regular'; }
+.bx-wrapper .bx-caption a { display: inline-block; position: relative; text-align: center; line-height: 50px; min-width: 170px; position: relative; z-index: 1; border: 2px solid #149eda; color: #fff; font-family:'Roboto Bold'; font-size: 16px; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; vertical-align: top; padding: 0; background: #149eda; border-radius: 0; margin: 0 0 0 0; text-transform: uppercase; }
+.bx-wrapper .bx-caption a i.fa-wifi { margin: 0 0 0 10px }
+.bx-wrapper .bx-caption a:hover { background: #eb118b; color: #fff; border: 2px solid #eb118b; }

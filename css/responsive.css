@@ -1,0 +1,35 @@
+@charset "utf-8";
+/*--------------media query css------------------*/	
+/*------------tablet landscape view------*/
+@media (max-width:1200px) {
+ 
+}
+/*------------tablet portrait  view------*/
+@media (max-width:1024px) {
+ 
+}
+@media (max-width:1023px) {
+ 
+}
+@media (max-width:991px) {
+ 
+}
+/*------------mobile landscape  view------*/
+@media (max-width:767px) {
+}
+/*------------mobile portrait view------*/
+@media (max-width:640px) {
+}
+/*----------optional css------*/
+@media (max-width:575px) {
+ 
+}
+@media (max-width:479px) {
+ 
+}
+@media (max-width:360px) {
+ 
+}
+/*---------use only when design is customise-----------*/
+@media screen and (min-width:700px) and (max-width:990px) {
+}
